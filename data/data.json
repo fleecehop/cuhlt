@@ -1,0 +1,8 @@
+{
+	"owl" : [
+	    {"item" : "<img width='370' height='300' style='display:block; text-align:center; -webkit-filter: grayscale(100%); filter: grayscale(100%);' src='img/blue.jpg'></img>"},
+	    {"item" : "<img width='370' height='300' style='display:block; text-align:center; -webkit-filter: grayscale(100%); filter: grayscale(100%);' src='img/bluish.jpg'></img>"},
+	    {"item" : "<img width='370' height='300' style='display:block; text-align:center; -webkit-filter: grayscale(100%); filter: grayscale(100%);' src='img/blugrad.jpg'></img>"},
+	    {"item" : "<img width='370' height='300' style='display:block; text-align:center; -webkit-filter: grayscale(100%); filter: grayscale(100%);' src='img/purplegrad.jpg'></img>"}
+	]
+}

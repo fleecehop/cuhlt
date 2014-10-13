@@ -1,0 +1,12 @@
+.element{
+	shape-outside: circle(30%);
+	-webkit-clip-path:circle(30%);
+	width: 300px;
+	height: 300px;
+	float: left;
+	background: green;
+}
+
+.element:hover{
+	-webkit-clip-path:circle(50%);
+}
