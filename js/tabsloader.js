@@ -33,6 +33,11 @@ $(function() {
         $('#blogTab').parent('li').addClass('active');
 
     }
+    else if (window.location.href.indexOf("admin") > -1) {
+
+        $('#adminTab').parent('li').addClass('active');
+
+    }
     else{
 
         $('#homeTab').parent('li').addClass('active');

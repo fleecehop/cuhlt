@@ -1,0 +1,76 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+}
+
+.my-block {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* navbar styling */
+
+.navbar-inverse {
+    background-color: black;
+}
+.navbar-toggle{
+	border-color: #000;
+}
+.navbar-toggle .icon-bar{
+	background-color: #000;
+}
+.navText{
+	font-family: 'Canterbury';
+	font-size: 20px;
+}
+.navbar a{
+	color: #000;
+}
+.navbar-brand{
+	font-size: 25px;
+}
+.dropdown:hover .dropdown-menu {
+   	display: block;    
+}
+
+.Absolute-Center {
+	margin: auto;
+	position: relative;
+	top: 0;
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+	font-family: 'Century-Gothic';
+	font-size: 20px;
+}
+/* OWL Carousel styling */
+#owl-demo .item{
+	padding: 30px 0px;
+	display: block;
+	margin: 5px;
+	color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+.owl-item{
+	display:block; 
+	width:100%;
+	height:auto;
+	text-align:center;
+}
+
+.displayFriendlyInput{
+
+	max-width: 200px;
+	min-width: 150px;
+
+}

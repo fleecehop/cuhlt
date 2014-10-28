@@ -1,6 +1,8 @@
 <?php
 
-	$title = 'CUHLT BLOG';
+	include 'php/globals.php';
+
+	$title = str_replace('"', "", $generalSettings['blogTitle']);
 	
 	include 'php/nav.php';
 	include 'php/header.php';
@@ -8,33 +10,45 @@
 
 ?>
 <html>
-<style>
 
-  html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        body {
-        }
-
-        .my-block {
-            text-align: center;
-            vertical-align: middle;
-        }
-
-</style>
 <body>
-	<div align='center' class='my-block'>
+
+	<div id='blogPage' class='Absolute-Center' style='width:95%'>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<i>(coming soon)</i>
+		<div id="blogContent" align='center'>
+			<i>
+			
+				(coming soon)
+			
+			</i>
+		</div>
 	</div>
+	
+
+<?php 
+	if(isset($_SESSION['admin'])){
+		if($_SESSION['admin']=='true'){
+			echo "
+					<script>
+						$(function(){
+
+							$('#blogContent').ckeditor();
+							
+							
+							$('#blogContent').prop('contenteditable','true');
+						
+							$('#blogPage').append(
+								'<br><br><br><div align=\"center\"><input class=\"btn btn-default\" onclick=\"removeEditor();\" type=\"button\" value=\"Save\"\></div>');
+						});
+					</script>
+			";
+
+		}
+	}
+
+?>
+
 </body>
+
 </html>

@@ -1,8 +1,8 @@
 <?php
 
-	//fix internet_user links, and smuv twitter
+	include 'php/globals.php';
 
-	$title = 'CUHLT TEAM';
+	$title = str_replace('"', "", $generalSettings['teamTitle']);
 	
 	include 'php/nav.php';
 	include 'php/header.php';
@@ -24,13 +24,12 @@
 		<div class="container">
 			
 			
-			
+			<!--/#four-columns-->
 			<div id="four-columns" class="grid-container" style="display:block;">
 				<ul class="rig columns-4" id='4colsFirst' align='center'></ul>
 				<ul class="rig columns-4" id='4cols' align='left' ></ul>
 			
 			</div>
-			<!--/#four-columns-->
 			
 			<hr />
 			
@@ -44,7 +43,7 @@
 		var dir = "img/";
 
 		//display team from globals file
-		$.getJSON( "php/globals.php", function( json ) {
+		$.getJSON( "php/teamglobals.php", function( json ) {
 			for (i=0; i < json.length; i++){
 	  			
 	  			var sc;
